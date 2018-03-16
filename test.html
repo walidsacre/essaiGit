@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>TESTS</title>
+
+</head>
+
+<body>
+ <div>
+        <p id="par">Un peu de texte, <a>un lien</a> et <strong>une portion en emphase</strong></p>
+    </div>
+
+    <script>
+      
+        var paragraph = document.getElementById('par');
+        var first = paragraph.firstChild;
+        var next = first.previousSibling;
+        var r= document.createAttibute ("a");
+
+        alert(next.firstChild.data); // Affiche « un lien »
+        
+        /*var un ="", deux="", trois="";
+        un = document.getElementById("par");
+        deux = un.firstChild;
+        trois = un.lastChild;
+        alert (trois.firstChild.nodeValue + "\n\n" + trois.firstChild.data);*/
+        
+        
+        /* var query = document.querySelector('#menu .item span'),
+    queryAll = document.querySelectorAll('#menu .item span');
+
+alert(query.innerHTML); // Affiche : "Élément 1"
+
+alert(queryAll.length); // Affiche : "2"
+alert(queryAll[0].innerHTML + ' - ' + queryAll[1].innerHTML); // Affiche : "Élément 1 - Élément 2"*/
+        
+/*var walid = document.getElementsByTagName('div');
+for (i = 0; i< walid.length; i++){
+    alert (walid  + [i+1])
+}*/
+        /* var nicks = [''],
+    nick;
+
+while (nick = prompt('Entrez un prénom :')) {
+    
+  
+        nicks.push(nick); // Ajoute le nouveau prénom ainsi qu'une espace juste après
+}
+        if (nicks.length >= 0){
+            alert (nicks.join (" "));
+        }
+        else{
+            alert ("c'est faux")
+        }*/
+
+  
+        /* var coords = (function () {
+
+    return {
+        x: 12,
+        y: 21,
+        k:5
+    };
+})();
+
+alert(coords.x); // 12
+alert(coords.y); // 21
+        alert(coords.k); */
+     /* var sakr = {
+           moi: "Walid",
+           monFils:"Younes",
+           maFille: "Tasnime",
+           maFemme:"Carole"
+       };
+        
+for (var famille in sakr){
+    alert (sakr[famille]);
+        };*/
+
+        
+       /* var walid = ['Pauline', 'Guillaume', 'Clarisse'];
+        // pour ne pas ralentir la boucle on ajoute une vergule + la variable C contenant walid.length.
+     for (var i = 0, c = walid.length; i < c; i++) {
+	
+    alert(walid[i]);
+		
+}*/
+       
+       /*var walid = ['Pauline', 'Guillaume', 'Clarisse'];
+           for (var i = 0; i < walid.length; i++){
+               alert (walid[i]);
+           }*/
+         /*cousinsArray = cousinsArray.split('');
+var cousinsString_2 = cousinsArray.join('---');
+
+
+        alert(cousinsArray);
+        alert(cousinsString_2);*/
+        /*var tableau= ["walid", 42, "Tasnime", 13, "Younes",11];
+       tableau.pop();
+        alert (tableau [5]);*/
+        
+        /*var walid ="je suis un homme";
+        alert(walid.length);
+        alert(walid.toUpperCase());*/
+        
+        
+        
+        /* var sayHello = (function() {
+
+    
+          return 'Yop !';
+          // cette variable contient une fonction isolé et auto-appelé
+      })();
+            // donc on peut alerter sans pb.
+
+        alert(sayHello); // Affiche : « Yop ! »*/
+     
+        
+        /* var walid= function (){
+            return "bonjour";
+        }
+        alert (walid());*/
+        
+        
+        
+        
+        
+        /*function myFunction(arg) { // Notre argument est la variable « arg »
+    // Une fois que l'argument a été passé à la fonction, vous allez le retrouver dans la variable « arg »
+    alert('Votre argument : ' + arg);
+      }
+
+        myFunction(prompt("Tapez votre argument ici:"));*/
+        
+        /* function showMsg() {
+            alert('Et une première fonction, une !');
+        }
+
+        showMsg(); 
+        
+        alert("j'essaie quelque chose!");
+        
+         showMsg(); */
+  
+        
+            // On exécute ici le code contenu dans la fonction
+
+        /*for (var nicks = '', nick; true;) {
+            nick = prompt('Entrez un prénom :');
+
+            if (nick) {
+                nicks += nick + ' ';
+            } else {
+                break;
+            }
+        }
+
+        alert(nicks);*/
+
+    </script>
+
+
+</body>
+
+</html>
